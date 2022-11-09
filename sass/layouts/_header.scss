@@ -1,0 +1,141 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.header__container .navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  background-color: var(
+    --ptimary-backgrond-color
+  );
+}
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.logo__first-part {
+  color: var(--accent-text-color);
+}
+
+.logo__header {
+  color: rgba(0, 0, 0, 1);
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+}
+
+.menu__item {
+  position: relative;
+}
+
+
+
+.menu__link.current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: -1px;
+  position: absolute;
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+}
+
+.connect__list .connect__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+
+.connect {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-icon {
+  fill: var(--second-text-color);
+}
+
+.navigation .menu__link {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.connect__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
+.connect__link {
+  color: var(--second-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  gap: 10px;
+  transition: color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}
+
+.connect__link .connect__icon {
+  transition: fill 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.connect__icon {
+  fill: var(--second-text-color);
+
+  .connect__link:focus &,
+  .connect__link:hover & {
+    fill: var(--accent-text-color);
+  }
+}
+.menu__link.current {
+  color: var(--second-accent-color);
+}
+.menu__link {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style: inherit;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}
