@@ -2,30 +2,51 @@
   background-color: var(
     --ptimary-backgrond-color
   );
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .customers__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 .company {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   align-items: center;
 }
-
+.company .item {
+  @media screen and (max-width: 1199px) {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+  }
+}
 .company__link {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -40,6 +61,9 @@
   &:focus,
   &:hover {
     border-color: var(--accent-text-color);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

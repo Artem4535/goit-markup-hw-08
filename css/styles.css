@@ -1,3 +1,8 @@
-/* button */
-
-/* hero */
+.p {
+  background-image: url(../images/hero-img/hero-bg-mob.jpg);
+  background-image: url(../images/hero-img/hero-bg-mob-2x.jpg);
+  background-image: url(../images/hero-img/hero-bg-tablet.jpg);
+  background-image: url(../images/hero-img/hero-bg-tablet-2x.jpg);
+  background-image: url(../images/hero-img/hero-bg-jbg.jpg);
+  background-image: url(../images/hero-img/hero-bg-jbg-2x.jpg);
+}
