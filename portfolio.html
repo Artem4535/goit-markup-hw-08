@@ -37,6 +37,7 @@
       href="./css/portfolio.min.css"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="container header__container">
@@ -72,12 +73,16 @@
         </nav>
         <div class="connect">
           <ul class="connect__list list">
-            <li>
+            <li class="connect-text">
               <a
                 class="connect__link"
                 href="mailto=info@devstudio.com"
               >
-                <svg width="16" height="12">
+                <svg
+                  width="16"
+                  height="12"
+                  class="connect-icon-container"
+                >
                   <use
                     class="connect__icon"
                     href="./images/sprite.svg#icon-envelope"
@@ -85,12 +90,16 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="connect-text">
               <a
                 class="connect__link"
                 href="tel=+380961111111"
               >
-                <svg width="10" height="16 ">
+                <svg
+                  width="10"
+                  height="16"
+                  class="connect-icon-container"
+                >
                   <use
                     class="connect__icon"
                     href="./images/sprite.svg#icon-smartphone"
@@ -100,6 +109,119 @@
             </li>
           </ul>
         </div>
+        <button
+          type="button"
+          class="open-mob-btn js-open-menu"
+          aria-expanded="false"
+        >
+          <svg
+            height="40"
+            width="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              href="./images/sprite.svg#icon-menu-mob"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="menu__container js-menu-container"
+        id="mobile-menu"
+      >
+        <button
+          class="menu__toggle js-close-menu"
+        >
+          <svg width="40" heigh="40">
+            <use
+              href="./images/sprite.svg#icon-close-mob"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              class="mobile-menu__link current"
+              href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="/"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-contacts">
+          <li class="item__contacts">
+            <a
+              class="link__tel"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="item__contacts">
+            <a
+              class="link__mail"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-socials">
+          <li class="item__socials">
+            <a
+              class="link__socials"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram</a
+            >
+          </li>
+          <li class="item__socials">
+            <a
+              class="link__socials"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter</a
+            >
+          </li>
+          <li class="item__socials">
+            <a
+              class="link__socials"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook</a
+            >
+          </li>
+          <li class="item__socials">
+            <a
+              class="link__socials"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -586,17 +708,6 @@
         </div>
       </div>
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
-<img
-  src="./images/content-img/img-about-1.jpg"
-  alt=""
-/>
-<img
-  src="./images/content-img/img-about-2.jpg"
-  alt=""
-/>
-<img
-  src="./images/content-img/img-abour-3.jpg"
-  alt=""
-/>

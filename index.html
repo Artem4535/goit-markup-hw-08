@@ -76,12 +76,16 @@
         </nav>
         <div class="connect">
           <ul class="connect__list list">
-            <li>
+            <li class="connect-text">
               <a
                 class="connect__link"
                 href="mailto=info@devstudio.com"
               >
-                <svg width="16" height="12">
+                <svg
+                  width="16"
+                  height="12"
+                  class="connect-icon-container"
+                >
                   <use
                     class="connect__icon"
                     href="./images/sprite.svg#icon-envelope"
@@ -94,7 +98,11 @@
                 class="connect__link"
                 href="tel=+380961111111"
               >
-                <svg width="10" height="16 ">
+                <svg
+                  width="10"
+                  height="16"
+                  class="connect-icon-container"
+                >
                   <use
                     class="connect__icon"
                     href="./images/sprite.svg#icon-smartphone"
@@ -107,8 +115,13 @@
         <button
           type="button"
           class="open-mob-btn js-open-menu"
+          aria-expanded="false"
         >
-          <svg height="40" width="40">
+          <svg
+            height="40"
+            width="40"
+            aria-label="Перемикач мобільного меню"
+          >
             <use
               href="./images/sprite.svg#icon-menu-mob"
             ></use>
@@ -132,7 +145,7 @@
         <ul class="mobile-menu">
           <li class="mobile-menu__item">
             <a
-              class="mobile-menu__link"
+              class="mobile-menu__link current"
               href="./index.html"
               >Студія</a
             >
@@ -327,70 +340,53 @@
           <div class="work">
             <ul class="list apps">
               <li class="apps-text">
-                <picture>
-                  <source
+                <a href="#" class="apps__link"
+                  ><img
                     srcset="
-                      ./images/content-img/img-about-1.jpg 1x,
-                      ./images/content-img/img-about-1.jpg 2x
+                      ./images/content-img/img-about-1.jpg        1x,
+                      ./images/content-img/img-about-1-2x-jpg.jpg 2x
                     "
-                    media="(min-width: 1200px)"
+                    src="./images/content-img/img-about-1.jpg"
+                    alt="допомагаємо скластки робочій графік"
+                    width="370"
                   />
-                  <a href="#" class="apps__link"
-                    ><img
-                      src="./images/content-img/img-about-1.jpg"
-                      alt="допомагаємо скластки робочій графік"
-                      width="370"
-                    />
-                    <h3 class="apps__thum-text">
-                      Десктопні додатки
-                    </h3></a
-                  >
-                </picture>
+                  <h3 class="apps__thum-text">
+                    Десктопні додатки
+                  </h3></a
+                >
               </li>
               <li class="apps-text">
-                <picture>
-                  <source
+                <a href="#" class="apps__link"
+                  ><img
                     srcset="
-                      ./images/content-img/img-about-2.jpg 1x,
-                      ./images/slider/img-igor-2x-jpg.jpg  2x
+                      ./images/content-img/img-about-2.jpg        1x,
+                      ./images/content-img/img-about-2-2x-jpg.jpg 2x
                     "
-                    media="(min-width: 1200px)"
+                    src="./images/content-img/img-about-2.jpg"
+                    alt="навчаємо на високому рівні"
+                    width="370"
                   />
-                  <a href="#" class="apps__link"
-                    ><img
-                      src="./images/content-img/img-about-2.jpg"
-                      alt="навчаємо на високому рівні"
-                      width="370"
-                    />
-                    <h3 class="apps__mobile-text">
-                      Мобільні додатки
-                    </h3></a
-                  >
-                </picture>
+                  <h3 class="apps__mobile-text">
+                    Мобільні додатки
+                  </h3></a
+                >
               </li>
 
               <li class="apps-text">
-                <picture>
-                  <source
+                <a href="#" class="apps__link">
+                  <img
                     srcset="
-                      ./images/content-img/img-abour-3.jpg 1x,
-                      ./images/slider/img-igor-2x-jpg.jpg  2x
+                      ./images/content-img/img-abour-3.jpg        1x,
+                      ./images/content-img/img-abour-3-2x-jpg.jpg 2x
                     "
-                    media="(min-width: 1200px)"
+                    src="./images/content-img/img-abour-3.jpg"
+                    alt="здійснюєм ваші мрії"
+                    width="370"
                   />
-                  <a href="#" class="apps__link">
-                    <img
-                      src="./images/content-img/img-abour-3.jpg"
-                      alt="здійснюєм ваші мрії"
-                      width="370"
-                    />
-                    <h3
-                      class="apps__designe-text"
-                    >
-                      Дизайнерські рішення
-                    </h3></a
-                  >
-                </picture>
+                  <h3 class="apps__designe-text">
+                    Дизайнерські рішення
+                  </h3></a
+                >
               </li>
             </ul>
           </div>

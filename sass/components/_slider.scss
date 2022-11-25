@@ -31,9 +31,10 @@
 }
 
 .slider-heading {
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 
   color: var(--title-text-color);
@@ -43,7 +44,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .slider-title {
