@@ -90,6 +90,9 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.project-item:not(:last-child) {
+  margin-bottom: 30px;
+}
 
 .cart-container {
   padding: 20px 24px;
